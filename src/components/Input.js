@@ -78,6 +78,8 @@ const Input = () => {
                         componentProp={<FaBackspace size={40}/>}
                     />
                 </motion.div>
+            </StyledNumber>
+        <StyledNumber>
                 <motion.div variants={Click} whileTap="whileTap" onClick={() => handleClick("5")}>
                     <Button
                         componentProp="5"
@@ -103,6 +105,8 @@ const Input = () => {
                         componentProp="+"
                     />
                 </motion.div>
+        </StyledNumber>
+        <StyledNumber>
                 <motion.div variants={Click} whileTap="whileTap" onClick={() => handleClick("1")}>
                     <Button
                         componentProp="1"
@@ -128,6 +132,8 @@ const Input = () => {
                         componentProp="*"
                     />
                 </motion.div>
+        </StyledNumber>
+        <StyledNumber>
                 <motion.div variants={Click} whileTap="whileTap" onClick={() => handleClick("0")}>
                     <Button
                         componentProp="0"
@@ -160,8 +166,8 @@ const Input = () => {
 
 const StyledInput = styled.input`
   margin-top: 1rem;
-  width: 52vw;
   height: 4.6rem;
+  width: 100%;
   font-size: 3rem;
   text-align: right;
   background-color: rgb(40, 40, 40);
@@ -172,7 +178,7 @@ const StyledInput = styled.input`
   outline: none;
   @media screen and (min-device-width: 320px) and (max-device-width: 480px) {
     width: 90vw;
-    font-size: 1.9rem;
+    font-size: 1.5rem;
   }
 `;
 
@@ -181,17 +187,19 @@ const StyledTop = styled.div`
   align-items: center;
   @media screen and (min-device-width: 320px) and (max-device-width: 480px) {
     margin-top: 50%;
+    width: 100%;
   }
 `;
 
 const StyledNumber = styled.div`
-  display: grid;
-  width: 52.4vw;
-  margin-top: 1.5rem;
-  grid-template-columns: 10rem 10rem 10rem 10rem 10rem;
+  display: flex;
+  width: 100%;
+  margin-top: 1rem;
+  justify-content: center;
+  //grid-template-columns: 20% 20% 20% 20% 20%;
   @media screen and (min-device-width: 320px) and (max-device-width: 480px) {
     width: 90vw;
-    grid-template-columns: 4.9rem 4.9rem 4.9rem 4.9rem 4.9rem;
+    //grid-template-columns: 4.5rem 4.5rem 4.5rem 4.5rem 4.5rem;
   }
 `;
 
