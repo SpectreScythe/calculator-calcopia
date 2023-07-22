@@ -1,3 +1,5 @@
+Calcopia is a powerful and user-friendly calculator app built using React JS, designed to provide you with a seamless and efficient math-solving experience.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
