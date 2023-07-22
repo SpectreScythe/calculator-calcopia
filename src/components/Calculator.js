@@ -15,6 +15,6 @@ const StyledCalculator = styled.div`
   justify-content: center;
   background-color: rgb(30,30,30);
   height: 100vh;
-`
+`;
 
 export default Calculator;

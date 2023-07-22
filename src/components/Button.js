@@ -32,6 +32,11 @@ const StyledButton = styled.button`
     border-radius: 10px;
     color: rgb(30,30,30);
   }
+  @media screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    width: 3.8rem;
+    height: 3.8rem;
+    font-size: 2.5rem;
+  }
 `;
 
 export default Button;

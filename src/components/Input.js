@@ -3,14 +3,14 @@ import styled from "styled-components";
 import Button from "./Button";
 import {FaBackspace} from "react-icons/fa";
 import {motion} from "framer-motion";
-import {Click}  from "./Animations";
+import {Click} from "./Animations";
 
 const Input = () => {
     const [display, setDisplay] = useState('');
 
     const handleClick = (value) => {
         setDisplay(display + value);
-        console.log("Calculated answer : " + (display+value));
+        console.log("Calculated answer : " + (display + value));
     };
     const clearHandler = () => {
         setDisplay("");
@@ -26,7 +26,7 @@ const Input = () => {
     const handleFactorial = () => {
         try {
             setDisplay(factorial(parseFloat(display)).toString());
-            console.log("Factorial : " +factorial(parseFloat(display)).toString())
+            console.log("Factorial : " + factorial(parseFloat(display)).toString())
         } catch (error) {
             setDisplay('Error');
         }
@@ -52,22 +52,23 @@ const Input = () => {
                 <StyledInput type="text" value={display} placeholder="Use the buttons below only:      "/>
             </StyledTop>
             <StyledNumber>
-                <motion.div variants={Click} whileTap="whileTap" onClick={() => handleClick("7")} >
+                <motion.div variants={Click} whileTap="whileTap" onClick={() => handleClick("7")}>
                     <Button
                         componentProp="7"
                     />
-                </motion.div >
-                <motion.div variants={Click} whileTap="whileTap" onClick={() => handleClick("8")} >
+                </motion.div>
+                <motion.div variants={Click} whileTap="whileTap" onClick={() => handleClick("8")}>
                     <Button
                         componentProp="8"
                     />
                 </motion.div>
-                <motion.div variants={Click} whileTap="whileTap" onClick={() => handleClick("9")} >
+                <motion.div variants={Click} whileTap="whileTap" onClick={() => handleClick("9")}>
                     <Button
                         componentProp="9"
                     />
                 </motion.div>
-                <motion.div variants={Click} whileTap="whileTap" onClick={() => handlePercentage()} >
+
+                <motion.div variants={Click} whileTap="whileTap" onClick={() => handlePercentage()}>
                     <Button
                         componentProp="%"
                     />
@@ -77,72 +78,72 @@ const Input = () => {
                         componentProp={<FaBackspace size={40}/>}
                     />
                 </motion.div>
-                <motion.div variants={Click} whileTap="whileTap" onClick={() => handleClick("5")} >
+                <motion.div variants={Click} whileTap="whileTap" onClick={() => handleClick("5")}>
                     <Button
                         componentProp="5"
                     />
                 </motion.div>
-                <motion.div variants={Click} whileTap="whileTap" onClick={() => handleClick("4")} >
+                <motion.div variants={Click} whileTap="whileTap" onClick={() => handleClick("4")}>
                     <Button
                         componentProp="4"
                     />
-                </motion.div >
-                <motion.div variants={Click} whileTap="whileTap" onClick={() => handleClick("6")} >
+                </motion.div>
+                <motion.div variants={Click} whileTap="whileTap" onClick={() => handleClick("6")}>
                     <Button
                         componentProp="6"
                     />
-                </motion.div >
-                <motion.div variants={Click} whileTap="whileTap" onClick={() => handleClick("-")} >
+                </motion.div>
+                <motion.div variants={Click} whileTap="whileTap" onClick={() => handleClick("-")}>
                     <Button
                         componentProp="-"
                     />
-                </motion.div >
-                <motion.div variants={Click} whileTap="whileTap" onClick={() => handleClick("+")} >
+                </motion.div>
+                <motion.div variants={Click} whileTap="whileTap" onClick={() => handleClick("+")}>
                     <Button
                         componentProp="+"
                     />
-                </motion.div >
-                <motion.div variants={Click} whileTap="whileTap" onClick={() => handleClick("1")} >
+                </motion.div>
+                <motion.div variants={Click} whileTap="whileTap" onClick={() => handleClick("1")}>
                     <Button
                         componentProp="1"
                     />
-                </motion.div >
-                <motion.div variants={Click} whileTap="whileTap" onClick={() => handleClick("2")} >
+                </motion.div>
+                <motion.div variants={Click} whileTap="whileTap" onClick={() => handleClick("2")}>
                     <Button
                         componentProp="2"
                     />
-                </motion.div >
-                <motion.div variants={Click} whileTap="whileTap" onClick={() => handleClick("3")} >
+                </motion.div>
+                <motion.div variants={Click} whileTap="whileTap" onClick={() => handleClick("3")}>
                     <Button
                         componentProp="3"
                     />
-                </motion.div >
-                <motion.div variants={Click} whileTap="whileTap" onClick={() => handleClick("/")} >
+                </motion.div>
+                <motion.div variants={Click} whileTap="whileTap" onClick={() => handleClick("/")}>
                     <Button
                         componentProp="/"
                     />
-                </motion.div >
-                <motion.div onClick={() => handleClick("*")} >
+                </motion.div>
+                <motion.div onClick={() => handleClick("*")}>
                     <Button
                         componentProp="*"
                     />
-                </motion.div >
-                <motion.div variants={Click} whileTap="whileTap" onClick={() => handleClick("0")} >
+                </motion.div>
+                <motion.div variants={Click} whileTap="whileTap" onClick={() => handleClick("0")}>
                     <Button
                         componentProp="0"
                     />
-                </motion.div >
-                <motion.div variants={Click} whileTap="whileTap" onClick={() => handleClick("00")} >
+                </motion.div>
+                <motion.div variants={Click} whileTap="whileTap" onClick={() => handleClick("00")}>
                     <Button
                         componentProp="00"
                     />
-                </motion.div >
-                <motion.div variants={Click} whileTap="whileTap" onClick={() => handleClick(".")} >
+                </motion.div>
+                <motion.div variants={Click} whileTap="whileTap" onClick={() => handleClick(".")}>
                     <Button
                         componentProp="."
                     />
-                </motion.div >
-                <motion.div variants={Click} whileTap="whileTap" onClick={() =>handleFactorial()} >
+                </motion.div>
+                <motion.div variants={Click} whileTap="whileTap" onClick={() => handleFactorial()}>
                     <Button
                         componentProp="!"
                     />
@@ -151,7 +152,7 @@ const Input = () => {
                     <Button
                         componentProp="="
                     />
-                </motion.div >
+                </motion.div>
             </StyledNumber>
         </div>
     );
@@ -160,20 +161,27 @@ const Input = () => {
 const StyledInput = styled.input`
   margin-top: 1rem;
   width: 52vw;
-  height:4.6rem;
+  height: 4.6rem;
   font-size: 3rem;
   text-align: right;
-  background-color: rgb(40,40,40);
+  background-color: rgb(40, 40, 40);
   color: ghostwhite;
-  border: 2px solid rgb(40,40,40);
+  border: 2px solid rgb(40, 40, 40);
   border-radius: 10px;
   transition: 0.50s all ease;
   outline: none;
+  @media screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    width: 90vw;
+    font-size: 1.9rem;
+  }
 `;
 
 const StyledTop = styled.div`
   display: flex;
   align-items: center;
+  @media screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    margin-top: 50%;
+  }
 `;
 
 const StyledNumber = styled.div`
@@ -181,6 +189,10 @@ const StyledNumber = styled.div`
   width: 52.4vw;
   margin-top: 1.5rem;
   grid-template-columns: 10rem 10rem 10rem 10rem 10rem;
+  @media screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    width: 90vw;
+    grid-template-columns: 4.9rem 4.9rem 4.9rem 4.9rem 4.9rem;
+  }
 `;
 
 
