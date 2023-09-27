@@ -51,6 +51,7 @@ const Input = () => {
     };
     return (
         <div>
+            <StyledHeader>CALCOPIA</StyledHeader>
             <StyledTop>
                 <StyledInput type="text" value={display} placeholder="Use the buttons below only:      "/>
             </StyledTop>
@@ -167,6 +168,19 @@ const Input = () => {
     );
 }
 
+const StyledHeader = styled.h1`
+  font-size: 4rem;
+  letter-spacing: 8px;
+  color: #ccc;
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+  @media screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    margin-top: 30%;
+    font-size: 3rem;
+    width: 100%;
+  }
+`;
+
 const StyledInput = styled.input`
   margin-top: 1rem;
   height: 4.6rem;
@@ -189,7 +203,7 @@ const StyledTop = styled.div`
   display: flex;
   align-items: center;
   @media screen and (min-device-width: 320px) and (max-device-width: 480px) {
-    margin-top: 50%;
+    margin-top: 5%;
     width: 100%;
   }
 `;
@@ -199,10 +213,8 @@ const StyledNumber = styled.div`
   width: 100%;
   margin-top: 1rem;
   justify-content: center;
-  //grid-template-columns: 20% 20% 20% 20% 20%;
   @media screen and (min-device-width: 320px) and (max-device-width: 480px) {
     width: 90vw;
-    //grid-template-columns: 4.5rem 4.5rem 4.5rem 4.5rem 4.5rem;
   }
 `;
 
