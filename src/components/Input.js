@@ -33,6 +33,7 @@ const Input = () => {
     };
     const handlePercentage = () => {
         try {
+            // eslint-disable-next-line no-eval
             setDisplay((eval(display) * 0.10).toString());
         } catch (error) {
             setDisplay('Error');
@@ -40,7 +41,9 @@ const Input = () => {
     };
     const handleCalculate = () => {
         try {
+            // eslint-disable-next-line no-eval
             setDisplay(eval(display).toString());
+            // eslint-disable-next-line no-eval
             console.log(eval((display).toString()));
         } catch (error) {
             setDisplay('Error');

@@ -24,7 +24,6 @@ const StyledButton = styled.button`
   background-color: rgb(40,40,40);
   color: ghostwhite;
   border: 2px solid rgb(40,40,40);
-  border-radius: 10px;
   transition: 0.50s all ease;
   &:hover{
     background-color: ghostwhite;
